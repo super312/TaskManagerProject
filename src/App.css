@@ -1,4 +1,9 @@
 #root {
-  background-color: blue;
+  color: gray;
 }
 
+.listcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

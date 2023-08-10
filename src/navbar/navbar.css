@@ -1,8 +1,17 @@
 .navbar {
-    background-color: cyan;
+    background-color: rgb(102, 0, 133);
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 60px;
+    color: black;
+    border-bottom: solid rgb(40, 0, 77);
+}
+
+.searchbar {
+    background-color: blueviolet;
+    color: black;
+    border: 0;
+    border-radius: 15px;
 }

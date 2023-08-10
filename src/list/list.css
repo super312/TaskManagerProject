@@ -1,0 +1,36 @@
+.list {
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+    width: 20%;
+    color: black;
+    margin: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.closebutton {
+    background-color: rgba(255, 0, 0, 0.295);
+    border: 0;
+    border-radius: 30px;
+    margin: 0 90px;
+    cursor: pointer;
+}
+
+.addbutton {
+    margin: 2px auto;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addbutton:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.textfield {
+    margin: 4px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
