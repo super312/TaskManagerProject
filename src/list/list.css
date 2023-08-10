@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.closebutton:hover {
+    background-color: rgba(172, 0, 0, 0.295);
+}
+
 .addbutton {
     margin: 2px auto;
     border: 0;

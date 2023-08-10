@@ -15,3 +15,15 @@
     border: 0;
     border-radius: 15px;
 }
+
+.addlist {
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(108, 6, 204);
+}
+
+.addlist:hover {
+    background-color: blueviolet;
+}

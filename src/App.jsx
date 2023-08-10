@@ -5,17 +5,27 @@ import Navbar from './navbar/navbar'
 import List from './list/list'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [lists,setLists] = useState([])
+
+  const addList = (info) => {
+    setLists([...lists,info])
+  }
+
+  const removeList = (pos) => {
+    setLists(lists.filter((obj, posObj) => posObj !== pos))
+  }
 
   return (
     <>
-      <Navbar />
+      <Navbar onAdd={() => addList('info')} />
       <div className='listcontainer'>
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
+
+        {lists.map((info,pos) => 
+          <List info={info}
+          onRemove={() => removeList(pos)} 
+          />
+        )}
+      
       </div>
     </>
   )

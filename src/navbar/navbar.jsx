@@ -1,11 +1,11 @@
 import './navbar.css'
 
-export default function Navbar() {
+export default function Navbar( {onAdd} ) {
     return(
         <div className='navbar'>
             <logo>Logo</logo>
             <input placeholder='search' className='searchbar' />
-            <profile>Profile</profile>
+            <button className='addlist' onClick={onAdd}>ADD LIST</button>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import './list.css'
 import Block from './blocks/block'
 import {useState} from 'react'
 
-export default function List() {
+export default function List( {info,onRemove} ) {
 
     const [note,setNote] = useState([])
     const [text,setText] = useState('')
@@ -20,11 +20,9 @@ export default function List() {
         setNote(note.filter((obj, posObj) => posObj !== pos))
     }
 
-    // <Block text={'Longer test to know more of it and if it working'} />
-
     return(
         <div className='list'>
-            <button className='closebutton'>close</button>
+            <button className='closebutton' onClick={onRemove}>close</button>
 
             {note.map((info,pos) =>
                 <Block text={info.text} 
